@@ -1,0 +1,47 @@
+Return-Path: <bounce-7741@mail-delivery.example.net>
+Received: from mta-03.mail-delivery.example.net (mta-03.mail-delivery.example.net [198.51.100.66])
+	by mx1.campus.example (Postfix) with ESMTPS id 7E586D16BB
+	for <a.rivera@campus.example>; Wed, 23 Sep 2026 06:12:44 +0000 (UTC)
+Received: from localhost (unknown [203.0.113.201])
+	by mta-03.mail-delivery.example.net (Postfix) with ESMTPA id BD4AFEB267;
+	Wed, 23 Sep 2026 06:12:39 +0000 (UTC)
+Received: from bulk-queue (localhost [127.0.0.1])
+	by mta-03.mail-delivery.example.net (Postfix) with SMTP id D73EEE4356;
+	Wed, 23 Sep 2026 06:12:38 +0000 (UTC)
+Authentication-Results: mx1.campus.example;
+	spf=fail (mx1.campus.example: 198.51.100.66 is not permitted to send as campus.example) smtp.mailfrom=mail-delivery.example.net;
+	dkim=none (message not signed) header.d=none;
+	dmarc=fail (p=quarantine applied) header.from=campus.example
+From: "Campus IT Service Desk" <it-support@campus.example>
+Reply-To: "Service Desk Verification" <helpdesk-verify@account-check.example.net>
+To: "A. Rivera" <a.rivera@campus.example>
+Subject: ACTION REQUIRED: your mailbox closes in 24 hours
+Date: Wed, 23 Sep 2026 06:12:38 +0000
+Message-ID: <20260923061238.D73EEE4356@mail-delivery.example.net>
+MIME-Version: 1.0
+X-Mailer: Bulk Mailer 3.2
+Content-Type: multipart/alternative; boundary="=_mac246_7e5c564f"
+
+--=_mac246_7e5c564f
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+URGENT: your mailbox quota expires in 24 hours.
+Verify now or the account is closed permanently.
+
+  https://mail.campus.example/password-reset
+
+Campus IT Service Desk
+
+--=_mac246_7e5c564f
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+<html><body>
+<p>URGENT: your mailbox quota expires in 24 hours.</p>
+<p><a href="http://campus-example-verify.invalid/session/renew?u=a.rivera%40campus.example&amp;t=a4ac3d48">https://mail.campus.example/password-reset</a></p>
+<p>Verify now or the account is closed permanently.</p>
+<p>Campus IT Service Desk</p>
+</body></html>
+
+--=_mac246_7e5c564f--

@@ -1,0 +1,37 @@
+Sep 30 02:01:14 web01 sshd[5077]: Accepted publickey for backup from 10.12.0.31 port 55164 ssh2: ED25519 SHA256:cf719dd60b198defdc0d14
+Sep 30 02:03:52 web01 sshd[2282]: Accepted publickey for monitor from 10.12.0.9 port 50558 ssh2: ED25519 SHA256:21ce177c038ee333675489
+Sep 30 02:05:33 web01 sshd[2329]: Accepted password for j.okafor from 10.12.0.32 port 52924 ssh2
+Sep 30 02:07:12 web01 sshd[12010]: Failed password for root from 198.51.100.23 port 41000 ssh2
+Sep 30 02:07:36 web01 sshd[12011]: Failed password for invalid user admin from 198.51.100.23 port 41001 ssh2
+Sep 30 02:08:00 web01 sshd[12012]: Failed password for invalid user oracle from 198.51.100.23 port 41002 ssh2
+Sep 30 02:08:23 web01 sshd[12013]: Failed password for invalid user test from 198.51.100.23 port 41003 ssh2
+Sep 30 02:08:45 web01 sshd[12014]: Failed password for postgres from 198.51.100.23 port 41004 ssh2
+Sep 30 02:09:03 web01 sshd[12015]: Failed password for invalid user svc-backup from 198.51.100.23 port 41005 ssh2
+Sep 30 02:09:21 web01 sshd[12016]: Failed password for root from 198.51.100.23 port 41006 ssh2
+Sep 30 02:09:46 web01 sshd[12017]: Failed password for invalid user admin from 198.51.100.23 port 41007 ssh2
+Sep 30 02:10:00 web01 sshd[12018]: Failed password for invalid user oracle from 198.51.100.23 port 41008 ssh2
+Sep 30 02:10:22 web01 sshd[12019]: Failed password for invalid user test from 198.51.100.23 port 41009 ssh2
+Sep 30 02:10:41 web01 sshd[12020]: Failed password for postgres from 198.51.100.23 port 41010 ssh2
+Sep 30 02:11:06 web01 sshd[12021]: Failed password for invalid user svc-backup from 198.51.100.23 port 41011 ssh2
+Sep 30 02:11:23 web01 sshd[12022]: Failed password for root from 198.51.100.23 port 41012 ssh2
+Sep 30 02:11:42 web01 sshd[12023]: Failed password for invalid user admin from 198.51.100.23 port 41013 ssh2
+Sep 30 02:12:06 web01 sshd[12024]: Failed password for invalid user oracle from 198.51.100.23 port 41014 ssh2
+Sep 30 02:12:24 web01 sshd[12025]: Failed password for invalid user test from 198.51.100.23 port 41015 ssh2
+Sep 30 02:12:43 web01 sshd[12026]: Failed password for postgres from 198.51.100.23 port 41016 ssh2
+Sep 30 02:12:59 web01 sshd[12027]: Failed password for invalid user svc-backup from 198.51.100.23 port 41017 ssh2
+Sep 30 02:13:14 web01 sshd[12028]: Failed password for root from 198.51.100.23 port 41018 ssh2
+Sep 30 02:13:30 web01 sshd[12029]: Failed password for invalid user admin from 198.51.100.23 port 41019 ssh2
+Sep 30 02:13:49 web01 sshd[12030]: Failed password for invalid user oracle from 198.51.100.23 port 41020 ssh2
+Sep 30 02:14:12 web01 sshd[12031]: Failed password for invalid user test from 198.51.100.23 port 41021 ssh2
+Sep 30 02:14:30 web01 sshd[12032]: Failed password for postgres from 198.51.100.23 port 41022 ssh2
+Sep 30 02:14:50 web01 sshd[12033]: Failed password for invalid user svc-backup from 198.51.100.23 port 41023 ssh2
+Sep 30 02:15:11 web01 sshd[12034]: Failed password for root from 198.51.100.23 port 41024 ssh2
+Sep 30 02:15:29 web01 sshd[12035]: Failed password for invalid user admin from 198.51.100.23 port 41025 ssh2
+Sep 30 02:15:48 web01 sshd[12036]: Failed password for invalid user oracle from 198.51.100.23 port 41026 ssh2
+Sep 30 02:16:09 web01 sshd[12037]: Failed password for invalid user test from 198.51.100.23 port 41027 ssh2
+Sep 30 02:16:33 web01 sshd[12038]: error: maximum authentication attempts exceeded for svc-backup from 198.51.100.23 port 41028 ssh2 [preauth]
+Sep 30 02:16:41 web01 sshd[12050]: Accepted password for svc-backup from 198.51.100.23 port 41100 ssh2
+Sep 30 02:16:43 web01 sshd[12050]: pam_unix(sshd:session): session opened for user svc-backup by (uid=0)
+Sep 30 02:41:07 web01 sshd[2367]: Failed password for j.okafor from 10.12.0.33 port 40429 ssh2
+Sep 30 02:41:22 web01 sshd[6205]: Failed password for j.okafor from 10.12.0.33 port 47040 ssh2
+Sep 30 02:41:51 web01 sshd[7457]: Accepted password for j.okafor from 10.12.0.33 port 41332 ssh2
