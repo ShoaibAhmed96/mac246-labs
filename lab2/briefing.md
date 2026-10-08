@@ -1,17 +1,18 @@
 # MAC246 Lab 2 Security Briefing
 
+## To: IT Director
+## Subject: CVE-2026-20105 - Cisco Remote Access SSL VPN DoS
 
-## Incident Summary
-The incident started with repeated failed SSH login attempts from 198.51.100.23. A successful login to the svc-backup account was later recorded. Soon after, the same source accessed the web admin area, uploaded a file, and executed commands through status.php. Firewall logs also showed attempts to reach internal database and SMB ports.
+The highest-priority CVE from my CVSS work is CVE-2026-20105. It affects Cisco Secure Firewall ASA and FTD Remote Access SSL VPN.
 
-## Key Evidence
-The authentication log showed many failed SSH attempts followed by an accepted password for svc-backup. The web access log showed a successful admin login, an upload request, and command execution through status.php. The firewall log recorded denied connection attempts to database and SMB ports.
+The vulnerability can be used by an authenticated remote attacker who already has a valid VPN connection. The attacker can send specially made packets to the VPN service and cause the device to run out of memory. This can make the firewall reload and create a denial-of-service condition.
 
-## Highest Risks
-The highest risks were compromise of the svc-backup account, unauthorized web admin access, command execution through the uploaded web shell, and attempts to reach internal services.
+The CVSS v3.1 score is 7.7, which is High. Because this affects a firewall/VPN gateway, I would treat it as an important issue.
 
-## Recommended Actions
-Immediately reset the svc-backup credentials, enable MFA, restrict SSH access, isolate the affected web server, remove the uploaded web shell, review admin activity, and block unnecessary access to internal database and SMB services.
+My risk register includes a Firewall/VPN Gateway row. I marked the treatment as Mitigate. Because of that, the organization should check the affected software version immediately and plan the vendor update as soon as possible. Until the update is completed, VPN activity should be monitored for unusual traffic or repeated connection problems.
 
-## Lessons Learned
-This incident shows how one compromised account can lead to broader system access. Centralized logging, MFA, network segmentation, patching, and faster investigation of repeated login failures can reduce the chance and impact of a similar attack.
+NVD:
+https://nvd.nist.gov/vuln/detail/CVE-2026-20105
+
+Cisco Advisory:
+https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-vpn-m9sx6MbC
