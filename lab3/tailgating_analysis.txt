@@ -1,0 +1,32 @@
+MAC 246 - Graded Lab 3
+Section 2 Part A: Physical Access Log Analysis
+Name: Shoaib Ahmed
+Student ID: 24364498
+MAC Token: 404d61dcad0f99b8
+
+CANDIDATE 1: OFFICE FLOOR
+Badge IDs: B1012 -> B1013
+Door: office-floor
+Time gap: 3 seconds
+Observation: Two entry events occurred at the same door within three seconds. This is a possible tailgating pattern.
+
+Benign explanation:
+Two authorized employees may have scanned their badges one after another while entering the office floor.
+
+Evidence needed:
+Compare CCTV footage, badge access logs, and door sensor timestamps to verify whether both people used their own badges and entered legitimately.
+
+CANDIDATE 2: SERVER ROOM
+Badge IDs: B1020 -> B1011
+Door: server-room
+Time gap: 1 second
+Observation: Two entry events occurred at the same door only one second apart. This should be reviewed because the server room contains sensitive equipment.
+
+Benign explanation:
+Two authorized IT staff members may have entered the server room together for maintenance or other approved work.
+
+Evidence needed:
+Review server-room CCTV, badge access records, and the authorized personnel list to confirm whether both entries were legitimate.
+
+CONCLUSION
+The Python analysis identified two possible tailgating patterns in physical_access.csv. However, the short time gaps alone do not prove unauthorized entry. CCTV footage, door sensor data, and access authorization records would help determine whether these were legitimate entries or security incidents.

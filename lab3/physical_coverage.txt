@@ -1,0 +1,37 @@
+MAC 246 - Graded Lab 3
+Section 2 Part B: Physical Security Control-Coverage Matrix
+Name: Shoaib Ahmed
+Student ID: 24364498
+
+ZONE 1: PERIMETER
+Existing controls: Fence and gate
+Classification: Deterrent and Preventive
+Explanation: The fence discourages unauthorized entry, while the gate restricts physical access.
+
+ZONE 2: LOBBY
+Existing control: Staffed security desk
+Classification: Preventive and Detective
+Explanation: Security staff can check visitors and observe suspicious entry activity.
+
+ZONE 3: OFFICE FLOOR
+Existing control: Badge-controlled door
+Classification: Preventive
+Explanation: The badge reader restricts entry to authorized badge holders. It may provide access logs, but logs alone cannot confirm who physically passed through.
+
+ZONE 4: SERVER ROOM
+Existing control: Locked door
+Classification: Preventive
+Explanation: The lock restricts access, but no dedicated detective control is specified.
+
+DETECTIVE COVERAGE GAP
+Zone: Server room
+Weakness: The locked door is a preventive control, but the facility description does not identify a dedicated camera, door alarm, or independent monitoring system for the server room.
+
+EVIDENCE PLAN
+Check the server-room access records, CCTV coverage map, door alarm configuration, and physical security inspection records. Verify whether any detection system actually monitors or records entry at this door. Missing records alone are not proof that monitoring is absent.
+
+PROPOSED COMPENSATING CONTROL
+Install a CCTV camera covering the server-room entrance and require periodic footage review. This would provide additional detective coverage and help investigate unauthorized entry.
+
+REFERENCE
+CompTIA Security+ SY0-701, Objective 1.2: Security Controls (physical security controls).
