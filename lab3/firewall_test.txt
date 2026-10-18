@@ -1,0 +1,62 @@
+MAC 246 - Graded Lab 3
+Section 5: Firewall ACL Testing
+Name: Shoaib Ahmed
+Student ID: 24364498
+
+FIREWALL TEST RESULTS
+
+TEST 1: Internet to Web Server HTTPS
+Destination: 203.0.113.10
+Protocol: TCP
+Port: 443
+Expected Result: ALLOW
+Reason: Rule 1 permits inbound HTTPS traffic to the web server.
+
+TEST 2: Web Server to Database
+Source: 203.0.113.10
+Destination: 10.0.0.20
+Protocol: TCP
+Port: 5432
+Expected Result: ALLOW
+Reason: Rule 2 permits the web server to connect to the database on port 5432.
+
+TEST 3: Admin Subnet SSH
+Source: 198.51.100.0/24
+Protocol: TCP
+Port: 22
+Expected Result: ALLOW
+Reason: Rule 4 permits SSH connections from the authorized admin subnet.
+
+TEST 4: Unauthorized SSH
+Source: Any address outside 198.51.100.0/24
+Protocol: TCP
+Port: 22
+Expected Result: DENY
+Reason: Rule 5 drops other inbound traffic not previously allowed.
+
+TEST 5: Direct Internet to Database
+Destination: 10.0.0.20
+Expected Result: DENY
+Reason: Rule 3 drops other forwarded traffic destined for the database.
+
+TEST 6: HTTP to Web Server
+Destination: 203.0.113.10
+Protocol: TCP
+Port: 80
+Expected Result: DENY
+Reason: Rule 5 drops inbound HTTP traffic because only HTTPS was permitted.
+
+ADDITIONAL DEFENSE-IN-DEPTH RULE
+
+iptables -A INPUT -m conntrack --ctstate INVALID -j DROP
+
+Explanation:
+This rule would help block packets with invalid connection-tracking states. It should be placed before general allow rules so invalid packets are rejected early.
+
+CONCLUSION
+
+The proposed five-rule ACL is designed to allow only necessary services while denying unauthorized inbound access. The six paper-based tests represent the intended policy behavior. The rules were not executed on the Kali Linux machine.
+
+NOTE
+
+The ACL is illustrative. Real deployment would require validating packet paths, INPUT versus FORWARD chains, return traffic, and the firewall's default policies.
