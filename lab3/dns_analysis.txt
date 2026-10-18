@@ -1,0 +1,26 @@
+MAC 246 - Lab 3
+Section 4: DNS Amplification Analysis
+
+Highest Amplification Domains:
+1. amp-open.example.com - 55.6x
+2. txt-bulk.example.org - 35.1x
+
+Largest Individual DNS Response:
+Domain: amp-open.example.com
+Qtype: ANY
+Response: 3899 bytes
+Amplification: 60.9x
+
+Mitigation 1: Response Rate Limiting (RRL)
+RRL reduces DNS amplification risk by limiting
+excessive DNS responses from a server.
+
+Mitigation 2: BCP 38 Ingress Filtering
+BCP 38 helps prevent source IP spoofing by
+filtering packets with invalid source addresses.
+
+Conclusion:
+The DNS log shows unusually large responses for
+small queries, creating amplification potential.
+Rate limiting and source address validation can
+reduce the risk of DNS reflection attacks.
