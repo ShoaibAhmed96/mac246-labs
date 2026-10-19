@@ -1,0 +1,41 @@
+MAC 246 - Graded Lab 3
+Section 6: WireGuard AllowedIPs Analysis
+
+Name: Shoaib Ahmed
+Student ID: 24364498
+
+AllowedIPs Configuration:
+10.8.0.0/24, 192.168.50.0/24
+
+Network 1: 10.8.0.0/24
+Total IPv4 addresses: 256
+
+Network 2: 192.168.50.0/24
+Total IPv4 addresses: 256
+
+Total unique addresses: 512
+
+Allowed IP Examples:
+10.8.0.2 - YES
+10.8.0.100 - YES
+192.168.50.25 - YES
+
+Not Covered:
+192.168.51.10 - NO
+8.8.8.8 - NO
+
+Tunnel Type: Split Tunnel
+
+Explanation:
+AllowedIPs defines the IP prefixes routed
+through a WireGuard peer and the source
+addresses accepted from that peer.
+
+The two configured /24 networks cover
+512 unique IPv4 addresses.
+
+Other destinations are not included in
+these AllowedIPs entries.
+
+This is a split-tunnel configuration,
+rather than a full tunnel using 0.0.0.0/0.

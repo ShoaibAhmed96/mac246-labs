@@ -2,3 +2,6 @@
 *.pem
 *.csr
 *.srl
+
+# WireGuard local configuration and keys
+wireguard/
