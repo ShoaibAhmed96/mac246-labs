@@ -1,0 +1,26 @@
+MAC 246 - Lab 3
+WireGuard Full-Tunnel Analysis
+
+Name: Shoaib Ahmed
+Student ID: 24364498
+
+AllowedIPs = 0.0.0.0/0
+
+IP Address       Result
+10.8.0.2         ALLOW
+192.168.50.25    ALLOW
+192.168.51.10    ALLOW
+8.8.8.8          ALLOW
+
+Explanation:
+0.0.0.0/0 covers all IPv4 addresses.
+
+In a full-tunnel configuration, all IPv4
+destinations are routed through the VPN peer.
+
+In a split tunnel, only selected networks
+are routed through the VPN.
+
+The full tunnel provides broader routing,
+while the split tunnel limits VPN routing
+to specific networks.
