@@ -1,0 +1,42 @@
+MAC 246 - Graded Lab 3
+Section 7: TLS Handshake Inspection
+
+Name: Shoaib Ahmed
+Student ID: 24364498
+
+TLS SERVER
+Address: 127.0.0.1
+Port: 4443
+
+HANDSHAKE RESULTS
+Protocol: TLS 1.3
+Cipher Suite: TLS_AES_256_GCM_SHA384
+Negotiated Group: X25519MLKEM768
+
+CERTIFICATE
+Subject: CN=lab.mac246.example.test
+Issuer: CN=MAC246 Intermediate CA
+Certificate Verification: OK
+Verify Return Code: 0 (ok)
+
+CIPHER SUITE ANALYSIS
+AES-256-GCM provides authenticated encryption,
+protecting the confidentiality and integrity
+of application data.
+
+SHA-384 is used in TLS 1.3 key derivation
+and handshake authentication.
+
+TLS 1.3 supports modern authenticated
+encryption and eliminates several legacy
+cryptographic mechanisms.
+
+CONCLUSION
+The local TLS handshake completed successfully
+using TLS 1.3 and TLS_AES_256_GCM_SHA384.
+
+The certificate chain was successfully verified
+using the trusted Root CA.
+
+The test was performed only on 127.0.0.1.
+Hostname verification was not separately tested.
