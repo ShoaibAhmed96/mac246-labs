@@ -1,0 +1,9 @@
+ * Serving Flask app 'xss'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5246
+Press CTRL+C to quit
+127.0.0.1 - - [16/Nov/2026 11:40:31] "GET /vuln?n=<script>alert(1)</script> HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 11:40:31] "GET /safe?n=<script>alert(1)</script> HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 11:40:31] "HEAD /vuln HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 11:40:31] "HEAD /safe HTTP/1.1" 200 -

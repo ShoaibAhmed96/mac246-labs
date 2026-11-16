@@ -1,0 +1,10 @@
+--- reflected vs escaped ---
+hi <script>alert(1)</script>
+hi &lt;script&gt;alert(1)&lt;/script&gt;
+--- headers: unhardened vs hardened ---
+MISSING on /vuln
+Content-Security-Policy: default-src 'self'
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+Referrer-Policy: no-referrer
+MAC246 Lab 4 token: 502a6d6785d7aef5
