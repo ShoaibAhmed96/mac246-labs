@@ -1,0 +1,5 @@
+SSID             BSSID              channel
+example-guest    00:00:5e:00:53:02  1
+example-iot      00:00:5e:00:53:04  11
+example-lab      00:00:5e:00:53:01  6
+example-lab      00:00:5e:00:53:03  11
